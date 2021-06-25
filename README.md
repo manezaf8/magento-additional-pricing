@@ -15,9 +15,9 @@
 
 * before install make sure this stuff is sorted out.
  
-Please create the following 2 attributes in the products page in the apache_child_terminate
-price_per_m2 = you can set it to text field if this is gonna be just to show the price.
-category_m2_price = make this attribute a yes/no enable/disbale attribute  
+Please create the following 2 attributes in the products page in the 
+* price_per_m2 = you can set it to text field if this is gonna be just to show the price.
+* category_m2_price = make this attribute a yes/no enable/disbale attribute  
 
 
 
