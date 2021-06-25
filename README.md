@@ -3,7 +3,8 @@
 
 ## Install
 * download the zip file.
-* Add it in root/app/code
+* Add it in root/app/code/F8/Pricing
+* F8/Pricing folder is already in the files you can copy the files and put them inside 
 * go to terminal root and type 
 *`bin/magento module:enable F8_Pricing`
 
