@@ -1,0 +1,38 @@
+
+ <!-- 
+ This code to be added in this file in the theme or 
+ extend it in the them and add this code 
+ above the getPrice function to call the 
+ second price in the category .
+
+ After adding this code remove this file in this module
+ -->
+                       
+                        <!-- price 2  -->
+                            <?php
+                            $per_m2_price = $_product->getData('price_per_m2');
+                            $category_m2_price = $_product->getData('category_m2_price');
+                            if($category_m2_price  == 1): ?>
+                            <span style="
+                                    font-size: 18px;
+                                        letter-spacing: 0.005em;
+                                        color: #2b2b2d;
+                                        font-weight: 400;
+                                        ">
+                            <?php echo 'R'. $per_m2_price . " /m²" ?>
+                            </span>
+                            <?php else:?>
+                                <span style="
+                                    font-size: 18px;
+                                        letter-spacing: 0.005em;
+                                        color: #2b2b2d;
+                                        font-weight: 400;
+                                        ">
+                            <?php //echo 'R'. number_format($_product->getPrice(), 2) . " ea."; ?>
+                            
+                            <!-- 'R' .(round( 20.600000 , 2) -->
+                            </span>
+                           <?php endif;?>
+                           <!-- end price  -->
+
+                       
