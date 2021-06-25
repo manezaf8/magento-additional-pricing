@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © f8, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block F8\Pricing\Block\Product\View*/
+$_product = $block->getProduct();
+?>
+<div class="f8-price" >
+
+
+   <!-- price 2  -->
+      <?php
+      $per_m2_price = $_product->getData('price_per_m2');
+      $category_m2_price = $_product->getData('category_m2_price');
+         if($category_m2_price  == 1): ?>
+            <span style="
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        line-height: 60px;
+                        ">
+                  <?php echo 'R'. $per_m2_price . " per m²" ?>
+                  </span>
+                     <?php else:?>
+            <span style="
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        line-height: 22px;
+                       ">
+         <?php //echo 'R'. number_format($_product->getPrice(), 2); ?> <!-- if for some reason the price is disabled uncomment this -->
+          <!-- 'R' .(round( 20.600000 , 2) -->
+        </span>
+      <?php endif;?>
+    <!-- end price  -->
+</div>
