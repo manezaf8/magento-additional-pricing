@@ -2,16 +2,16 @@
 *This adds additional pricing in PDP and Category pages
 
 #Install
-. download the zip file.
-. Add it in root/app/code
-. go to terminal root and type 
-`bin/magento module:enable F8_Pricing`
+* download the zip file.
+* Add it in root/app/code
+* go to terminal root and type 
+*`bin/magento module:enable F8_Pricing`
 
-`php bin/magento setup:upgrade && php bin/magento cache:flush && php bin/magento cache:clean
-php bin/magento indexer:reindex
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy -f
-`
+* `php bin/magento setup:upgrade && php bin/magento cache:flush && php bin/magento cache:clean`
+* `php bin/magento indexer:reindex`
+* `php bin/magento setup:di:compile`
+* `php bin/magento setup:static-content:deploy -f`
+
 
 * before install make sure this stuff is sorted out.
 <!-- 
@@ -21,7 +21,7 @@ category_m2_price = make this attribute a yes/no enable/disbale attribute
 -->
 
 
-
+* Check this file
  <!-- 
  This code to be added in this file in the theme or 
  extend it in the them and add this code 
