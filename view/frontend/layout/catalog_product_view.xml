@@ -7,4 +7,4 @@
         </referenceContainer>
         <move element="pricing.image" destination="product.info" after="-" />
     </body>
-</page>
+</page> 

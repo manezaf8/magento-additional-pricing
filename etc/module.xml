@@ -3,7 +3,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
     <module name="F8_Pricing" setup_version="0.0.1">
         <sequence>
-            <module name="Magento_Catalog"/>
+            <module name="Magento_Catalog"/> 
         </sequence>
     </module>
 </config>

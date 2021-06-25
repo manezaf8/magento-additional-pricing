@@ -32,3 +32,4 @@ Please create the following 2 attributes in the products page in the
  After adding this code remove this file in this module
 
 * This file = F8/Pricing/view/frontend/templates/product/list.phtml
+ 

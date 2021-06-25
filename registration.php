@@ -11,4 +11,4 @@
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
     'F8_Pricing',
     __DIR__
-);
+); 
